@@ -73,7 +73,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: red;
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
