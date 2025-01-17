@@ -1,10 +1,20 @@
-.secondary-banner-container {
+
+/* Section Styles */
+
+.blue-bg {
     background-color: #B2DDF5;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.yellow-bg {
+    background-color: yellow;
 }
 
 .secondary-banner > div {
     display: flex;
-    background-color: #B2DDF5;
 }
 
 .secondary-banner > div > div:last-child {
