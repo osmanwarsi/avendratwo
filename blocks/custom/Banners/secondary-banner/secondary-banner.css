@@ -1,3 +1,7 @@
+.secondary-banner-container {
+    background-color: #B2DDF5;
+}
+
 .secondary-banner > div {
     display: flex;
     background-color: #B2DDF5;
