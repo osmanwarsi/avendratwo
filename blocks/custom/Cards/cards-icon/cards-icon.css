@@ -1,0 +1,28 @@
+.cards-icons-container {
+    padding: 40px;
+    background-color: #B2DDF5;
+}
+
+.cards-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.cards-icons > div {
+    background-color: rgb(5, 34, 31);
+    color: white;
+    padding: 20px;
+    border-radius: 20px 0 20px 0px; /* Top-left and bottom-right radius */
+}
+
+.cards-icon .button-container a.button:any-link {
+    background-color: red;
+    border-radius: 0;
+    color: red;
+    font-weight: 700;
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    border: none;
+}

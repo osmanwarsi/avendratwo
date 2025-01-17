@@ -9,7 +9,10 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-
+@import url('../blocks/custom/Banners/hero-banner/hero-banner.css');
+@import url('../blocks/custom/Banners/secondary-banner/secondary-banner.css');
+@import url('../blocks/custom/Cards/logo-cards/logo-cards.css');
+@import url('../blocks/custom/Cards/cards-icon/cards-icon.css');
 :root {
   /* colors */
   --background-color: white;
@@ -20,8 +23,8 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: inter, roboto, roboto-fallback, sans-serif;
+  --heading-font-family: inter, roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -73,7 +76,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: red;
+  background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
@@ -229,13 +232,13 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 0px 0;
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
-  padding: 0 24px;
+  padding: 0 0;
 }
 
 main > .section:first-of-type {
@@ -244,7 +247,7 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
   main > .section > div {
-    padding: 0 32px;
+    padding: 0 0px;
   }
 }
 

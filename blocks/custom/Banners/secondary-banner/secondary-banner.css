@@ -1,0 +1,45 @@
+.secondary-banner > div {
+    display: flex;
+    background-color: #B2DDF5;
+}
+
+.secondary-banner > div > div:last-child {
+    display: grid;
+/* vertically center but align items to the left */
+align-items: center;
+justify-items: start; 
+min-height: 400px;
+width: 40%;
+}
+
+.secondary-banner > div > div:last-child p:not(.button-container) {
+    font-size: xx-large;
+}
+
+.secondary-banner .button-container {
+    color: red;
+}
+
+.secondary-banner .button-container a.button:any-link {
+    background-color: #008FDC;
+    border-radius: 0;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    border: none;
+}
+
+.secondary-banner .button-container a.button:any-link:hover {
+    background-color: white;
+    border-radius: 0;
+    color: #008FDC;
+    font-weight: 700;
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    border: none;
+}

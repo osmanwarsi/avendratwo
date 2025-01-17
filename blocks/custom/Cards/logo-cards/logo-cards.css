@@ -1,0 +1,27 @@
+.logo-cards-container {
+    padding: 40px; 
+    background-color: rgb(234, 234, 234);
+}
+
+.logo-cards-container > .default-content-wrapper > p:first-child {
+    color: #008FDC;
+    font-style: bold;
+}
+
+.logo-cards-container > .default-content-wrapper > p:last-child {
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+
+.logo-cards {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    padding: 40px;
+}
+
+.logo-cards img {
+    width: 80%;
+}
+
