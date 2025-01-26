@@ -1,0 +1,40 @@
+.lang-modal {
+    position: fixed;
+    z-index: 9999;  
+    left: 0; 
+    top: 0; 
+    width: 100vw; 
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    display: none; /* hidden by default */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lang-modal.active {
+    display: flex; /* show when .active is present */
+  }
+  
+  .lang-modal-content {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 4px;
+    color: white;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .lang-modal-content > ul > li picture img {
+    width: 15px;
+    height: 10px;
+  }
+  .lang-modal-close {
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    background: #ccc;
+    border: 0;
+    padding: 0.5rem 1rem;
+  }
+  

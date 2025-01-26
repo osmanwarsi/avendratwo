@@ -1,9 +1,13 @@
 /* header and nav layout */
+@import url('./langmodal.css');
+
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background: linear-gradient(to bottom, #011B2B 0%, #011B2B 85%, rgba(1, 27, 43, 0) 100%);
   width: 100%;
-  z-index: 2;
   position: fixed;
+  top: 40px;
+  z-index: 20;
+  padding: 2em 0;
 }
 
 header nav {
@@ -111,6 +115,17 @@ header nav[aria-expanded='true'] .nav-hamburger-icon {
   height: 22px;
 }
 
+/* Custom for NAV SECTIONS DROPWFORN MOBILE for nav hamburger */
+
+/* Ensure the bullet points are visible and styled */
+header nav[aria-expanded='true'] .nav-sections .default-content-wrapper > ul > li {
+  color: white;
+}
+
+header nav[aria-expanded='true'] .nav-sections .default-content-wrapper > ul > li > ul {
+  color: gray;
+}
+
 header nav[aria-expanded='true'] .nav-hamburger-icon::before,
 header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   top: 3px;
@@ -157,10 +172,14 @@ header nav .nav-sections {
   visibility: hidden;
 }
 
+
+/* custom nav-sections with SEARCH on the right */
+
 header nav[aria-expanded='true'] .nav-sections {
   display: block;
   visibility: visible;
   align-self: start;
+  display: flex;
 }
 
 header nav .nav-sections ul {
@@ -198,6 +217,8 @@ header nav .nav-sections ul > li > ul > li {
     cursor: pointer;
   }
 
+
+  /* ICON FOR NAV DROP */
   header nav .nav-sections .nav-drop::after {
     content: '';
     display: inline-block;
@@ -234,6 +255,7 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
   }
 
+  /* Drop down on large screen */
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
     display: block;
     position: absolute;
@@ -244,6 +266,8 @@ header nav .nav-sections ul > li > ul > li {
     background-color: var(--light-color);
     white-space: initial;
   }
+
+
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     content: '';
@@ -265,4 +289,86 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+/* NV1: Top Nav bar styling */
+
+header .header > .default-content-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Flex items go to the right by default */
+  align-items: center;
+  background-color: #011B2B;
+  height: 40px;
+  color: white;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 1rem;
+  gap: 2rem;
+  box-sizing: border-box;
+  font-size: x-small;
+}
+
+/* REMOVING OTHER LANGUAGES BELOW ENGLISH */
+header .header > .default-content-wrapper ul li > ul {
+  display: none; /* hides nested sub-lists inside the nav by default */
+}
+
+
+/* Removes bullets for all top-level li in your default-content-wrapper nav */
+header .header > .default-content-wrapper ul > li {
+  list-style-type: none; /* Removes the default bullet */
+  cursor: pointer;       /* Shows pointer icon on hover */
+}
+
+/* decrease image size */
+header .header > .default-content-wrapper ul > li picture > img {
+  width: 15px;
+  height: 10px;
+}
+
+header .header > .default-content-wrapper ul {
+  padding: 0px;
+}
+
+/* Underline text on hover */
+header .header > .default-content-wrapper ul > li:hover {
+  text-decoration: underline;
+}
+
+/* Hide nested sub-lists inside the nav by default */
+header .header > .default-content-wrapper ul li > ul {
+  display: none;
+}
+
+header .header > .default-content-wrapper .button-container a.button:any-link {
+  background-color: transparent;
+
+}
+
+header .header > .default-content-wrapper .button-container a.button:any-link:hover {
+  text-decoration: underline;
+
+}
+
+
+header .header > .default-content-wrapper > p:first-child {
+  margin-right: auto; /* Pushes all other elements to the right */
+}
+
+/* Add a line between elements on the right */
+header .header > .default-content-wrapper > p:not(:first-child) {
+  position: relative;
+}
+
+header .header > .default-content-wrapper > p:not(:first-child):not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -1rem; /* Adjust based on the gap */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%; /* Adjust as needed */
+  width: 1px;
+  background-color: white;
 }
